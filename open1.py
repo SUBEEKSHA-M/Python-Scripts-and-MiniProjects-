@@ -5,5 +5,5 @@
 name = input("what's your name? ")
 
 file = open("names.txt", "a")  #a=append
-file.write(name)
+file.write(f"{name}/n")
 file.close()
