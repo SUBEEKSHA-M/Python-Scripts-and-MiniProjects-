@@ -6,4 +6,4 @@ with open("names.txt", "r") as file: #a=append
     lines = file.readlines()
 
 for line in lines:
-    print("hello,", line)
+    print("hello,", line, end="")
