@@ -44,7 +44,7 @@ model = Sequential([
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # Train
-model.fit(train_data, epochs=15, validation_data=test_data)
+model.fit(train_data, epochs=7, validation_data=test_data)
 
 # Save model
 model.save("emotion_model.h5")
