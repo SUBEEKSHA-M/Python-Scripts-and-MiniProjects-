@@ -7,7 +7,7 @@ model = tf.keras.models.load_model("emotion_model.h5")
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
 
 # Load image
-img_path = "test_face.jpg"
+img_path = "test_face1.jpg"
 img = cv2.imread(img_path)
 
 if img is None:
@@ -24,10 +24,10 @@ if len(faces) == 0:
     print("❌ No face detected.")
 else:
     for (x, y, w, h) in faces:
-        roi_gray = gray[y:y+h, x:x+w]
-        resized = cv2.resize(roi_gray, (48, 48))
-        normalized = resized / 255.0
-        reshaped = np.reshape(normalized, (1, 48, 48, 1))
+        roi_gray = gray[y:y+h, x:x+w]                #crop face
+        resized = cv2.resize(roi_gray, (48, 48))     #resize to 48x48
+        normalized = resized / 255.0                 #normalize pixel values
+        reshaped = np.reshape(normalized, (1, 48, 48, 1))  #reshape model
 
         result = model.predict(reshaped)
         emotion = emotion_labels[np.argmax(result)]
