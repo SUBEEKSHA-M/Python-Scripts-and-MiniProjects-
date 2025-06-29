@@ -7,7 +7,7 @@ model = tf.keras.models.load_model("emotion_model.h5")
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
 
 # Load image
-img_path = "test_face1.jpg"
+img_path = "test_face3.jpg"
 img = cv2.imread(img_path)
 
 if img is None:

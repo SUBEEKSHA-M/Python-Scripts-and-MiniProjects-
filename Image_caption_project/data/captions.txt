@@ -1,0 +1,15 @@
+dog1.jpg	A brown dog is running on the grass.
+dog2.jpg	A black dog is playing with a red ball.
+dog3.jpg	A small white dog is jumping over a stick.
+cat1.jpg	A cat is sleeping on a sofa.
+cat2.jpg	A black cat is looking out the window.
+cat3.jpg	A white cat is drinking milk from a bowl.
+bike1.jpg	A red bicycle is parked beside a tree.
+bike2.jpg	A person is riding a bike on a road.
+bike3.jpg	A blue mountain bike is on a rocky trail.
+dog4.jpg	A golden retriever is swimming in a lake.
+cat4.jpg	A kitten is playing with a toy mouse.
+bike4.jpg	A green bike is leaning against a wall.
+dog5.jpg	A dog is barking at a stranger.
+cat5.jpg	A cat is hiding under a table.
+bike5.jpg	A cyclist is performing a trick with a BMX bike.
